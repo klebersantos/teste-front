@@ -225,8 +225,14 @@ min-height: 2000px;
 }
 
 .home__about {
-  padding: 50px 0;
+  margin: 50px 0 0;
+  padding: 80px 0;
   border-bottom: 1px solid #eee; 
+  background: #d9a7c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(255, 252, 219, 0), #eee);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 252, 219, 0), #eee); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
   p {
     line-height: 27px;
   }
@@ -241,6 +247,9 @@ min-height: 2000px;
 .home__services {
   padding: 50px 0;
   border-bottom: 1px solid #eee; 
+  background: #d9a7c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #eee, rgba(238, 238, 238, 0));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #eee, rgba(238, 238, 238, 0)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   .title__header {
     text-align: center;
     max-width: 400px;
@@ -322,6 +331,7 @@ min-height: 2000px;
 
 
 .home__products {
+  background: rgb(247, 247, 247);
   padding: 50px 0;
   border-bottom: 1px solid #eee; 
   .title__header {
