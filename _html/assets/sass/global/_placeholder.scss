@@ -1,0 +1,50 @@
+/*
+|----------------------------------------------
+| Regras Agrupadas
+|----------------------------------------------
+*/
+
+%center{
+  display: block;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+%fl{
+  float: left;
+}
+
+%fr{
+  float: right;
+}
+
+%img-rep{
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+%text-center{
+  text-align: center;
+}
+
+// Clearfix
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%inline-block{
+  display: inline-block;
+}
+
+%block{
+  display: block;
+}

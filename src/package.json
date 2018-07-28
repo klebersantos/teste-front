@@ -1,0 +1,31 @@
+{
+  "name": "atratis",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "gulp": "*",
+    "gulp-babel": "*",
+    "babel-core": "^6.25.0",
+    "gulp-changed": "*",
+    "gulp-concat": "*",
+    "gulp-image-optimization": "*",
+    "gulp-imagemin": "*",
+    "gulp-notify": "*",
+    "gulp-postcss": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*"
+  },
+  "dependencies": {
+    "bourbon": "*",
+    "material-design-lite": "*",
+    "popper.js": "^1.12.5"
+  }
+}

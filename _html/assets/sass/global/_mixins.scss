@@ -1,0 +1,110 @@
+// |----------------------------------------------
+// | Mixins
+// |----------------------------------------------
+
+@mixin full(){
+  width: 100%;
+  float:left;
+}
+
+
+
+
+// Function of the  ft-convert
+// passar valor em px, retorna o equivalente em EM
+@function ft-c($val, $reverse:false) {
+  @if ($reverse==true){
+    $calc : $val * 16;
+    @return $calc#{px};
+  }@else{
+    $calc : $val / 16;
+    @return $calc#{rem};
+  }
+}
+
+// Imagens Dimamicas com compass
+@function src($url){
+  $urls : image-url($url);
+  @return $urls;
+}
+
+// Criar Box
+@mixin size($width, $height : $width) {
+  width: $width;
+  height: $height;
+}
+
+// Largura e altura dinamica por compass
+@mixin image-box($imageUrl) {
+  width  : image-width($imageUrl);
+  height : image-height($imageUrl);
+  background-image : image-url($imageUrl);
+}
+
+// Image Replacement
+@mixin img-rep($imageUrl, $float: left){
+  @include image-box($imageUrl);
+  float: $float;
+  overflow : hidden;
+  text-indent: -9999px;
+}
+
+// Image txt indent
+@mixin img-ind($float: left){
+  float: $float;
+  overflow : hidden;
+  text-indent: -9999px;
+}
+
+// Font-modal
+@mixin ftModal($font-weight: $ftRegular, $font-size: 16, $font: $ft, $color: none, $textTranform: false){
+  font: $font-weight ft-c($font-size) $font;
+
+  @if $color != none{
+    color: $color;
+  }
+
+  @if $textTranform != false{
+    text-transform: uppercase;
+  }
+};
+
+// Transition
+@mixin transition($properties: all, $duration: .1s, $easing: ease-in-out) {
+  @if length($properties) > 1 {
+    transition-property: $properties;
+    transition-duration: $duration;
+    transition-timing-function: $easing;
+  } @else {
+    transition: $properties $duration $easing;
+  }
+}
+
+
+// Painel 100%
+@mixin full-painel($name, $width: 1920){
+  .#{$name}{
+    @extend %block;
+    @include relative;
+    z-index: 0;
+    width: 100%;
+    margin: 45px 0 25px;
+    overflow: hidden;
+
+    .#{$name}-wrap{
+      @include relative(left 50%);
+      @extend %fl;
+      padding: 0;
+      margin-left: - ($width / 2 + px);
+      text-align: center;
+
+      .#{$name}-item{
+        @extend %block;
+        @include size( $width + px, auto);
+        max-height: none;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
