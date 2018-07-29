@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 center">
-                        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                        <h2>Lorem Ipsum is simply dummy text of.</h2>
                     </div>
                 </div>
             </div>
@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 center">
-                        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                        <h2>Lorem Ipsum is simply dummy text of the printing</h2>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 center">
-                        <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+                        <h2>Lorem Ipsum is simply dummy?</h2>
                     </div>
                 </div>
             </div>

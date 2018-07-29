@@ -90,9 +90,6 @@
                                     c2.4-0.1,4.5-0.4,6.2-0.7C316.4,11.4,317.1,12.2,317.6,13.1z"/>
                             </g>
                             </svg>
-
-
-
                         </a>
                         <ul class="d-flex justify-content-between align-items-center">
                             <li>
@@ -114,9 +111,6 @@
         </div>
     </div>
 </header>
-
-
-
 
 <header class="mob_header nav-down">
         <div class="container-fluid">
